@@ -12,7 +12,7 @@ if(!empty($_POST)){
 }
 
 if(!empty($_POST)){
-    $nombre = $_POST["idioma"];
+    $idioma = $_POST["idioma"];
     include_once "clases/ControladorProfesor.php";
     $controladorProfesor = new ControladorProfesor();
     $controladorProfesor->guardar($idioma);
