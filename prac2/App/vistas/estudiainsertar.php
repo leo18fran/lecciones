@@ -6,7 +6,7 @@
 <?php
 if(!empty($_POST)){
    $nombre = $_POST["nombre"];
-   include_once "clases/ControladorFacultad.php";
+   include_once "clases/ControladorEstudiante.php";
    $controladorEstudiante = new ControladorEstudiante();
    $controladorEstudiante->guardar($nombre);
 }
